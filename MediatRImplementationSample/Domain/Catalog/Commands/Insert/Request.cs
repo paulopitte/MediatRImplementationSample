@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System;
 
-namespace MediatRImplementationSample.Domain.Catalog.Commands
+namespace MediatRImplementationSample.Domain.Catalog.Commands.Insert
 {
     public class Request : Validatable, IRequest<Result>
     {

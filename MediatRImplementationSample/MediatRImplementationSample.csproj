@@ -5,16 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Notifications\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Flunt" Version="1.0.5" />
 
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.18.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="MongoDB.Driver" Version="2.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\Catalog\Commands\Update\" />
   </ItemGroup>
 
 </Project>

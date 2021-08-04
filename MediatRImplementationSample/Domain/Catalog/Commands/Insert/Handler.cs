@@ -3,7 +3,7 @@ using MediatRImplementationSample.Domain.Catalog.Repository;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MediatRImplementationSample.Domain.Catalog.Commands
+namespace MediatRImplementationSample.Domain.Catalog.Commands.Insert
 {
     public class Handler : IRequestHandler<Request, Result>
     {
@@ -29,7 +29,8 @@ namespace MediatRImplementationSample.Domain.Catalog.Commands
                Id = product.Id,
                Title = product.Title,
                SalePrice = product.SalePrice,
-               CreateAt = product.CreateAt
+               CreateAt = product.CreateAt,
+               Status = product.Status
             }, cancellationToken);
 
             return Result.Ok;

@@ -35,7 +35,7 @@ namespace MediatRImplementationSample.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Domain.Catalog.Commands.Request request)
+        public async Task<IActionResult> Create(Domain.Catalog.Commands.Insert.Request request)
         {
             Domain.Result result = await _mediator.Send(request, CancellationToken.None);
             return ValidationHandler(request, result, "Index");
